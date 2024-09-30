@@ -44,10 +44,10 @@ export class AuthService{
             return await this.account.get()
         } catch (error) {
             console.log("Appwrite serive :: getCurrentUser :: error",error)
-            throw error
+            // throw error
         }
 
-        // return null
+        return null
     }
 
     // logout
